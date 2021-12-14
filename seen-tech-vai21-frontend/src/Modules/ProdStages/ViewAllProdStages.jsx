@@ -171,7 +171,9 @@ const ViewAllProdStages = ({
                         <IoIosGitCompare />
                       </Button>
                     </TableCell>
-                    <TableCell>{prodstages.name}</TableCell>
+                    <TableCell>
+                      {prodstages.name ? prodstages.name : "N/A"}
+                    </TableCell>
                     <TableCell>
                       {prodstages.machine ? prodstages.machinename : "N/A"}
                     </TableCell>
